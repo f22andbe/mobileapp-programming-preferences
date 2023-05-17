@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Shared Preferences</string>
+    <string name="activity_name">Edit Preference</string>
+    <string name="headline_edit_field">Preference</string>
+    <string name="hint_edit_field">Enter value here</string>
+    <string name="button_sa">Switch activity</string>
 </resources>
