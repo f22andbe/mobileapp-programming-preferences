@@ -14,7 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences settings;
-    Button switchActivity;
+    Button switchActivityButton;
     TextView showPref;
 
     @Override
@@ -23,11 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        switchActivity = findViewById(R.id.switch_acitivity_button);
+        switchActivityButton = findViewById(R.id.switch_acitivity_button);
         showPref = findViewById(R.id.show_pref);
 
         settings = getSharedPreferences("shared_prefs", MODE_PRIVATE);
-
     }
 
     public void onClickListener(View v) {
