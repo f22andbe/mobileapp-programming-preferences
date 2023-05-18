@@ -20,17 +20,17 @@ public class EditPreferenceActivity extends AppCompatActivity {
         setContentView(R.layout.edit_pref);
 
         field = findViewById(R.id.edit_field);
-        preferences = getSharedPreferences("shared_prefs", MODE_PRIVATE);
-        preferenceEditor = preferences.edit();
+        preferences = getSharedPreferences("shared_prefs", MODE_PRIVATE); //get a reference to the shared preferences
+        preferenceEditor = preferences.edit(); // get an preference editor object
 
     }
 
     public void onClickListener(View v) {
-        String fieldText = field.getText().toString();
+        String fieldText = field.getText().toString(); //get string from EditText field
         Log.d("EditActivity:onClickListener", fieldText);
-        preferenceEditor.putString("email", fieldText);
-        preferenceEditor.apply();
-        finish();
+        preferenceEditor.putString("email", fieldText);//write this string together with key "email"
+        preferenceEditor.apply(); //apply the updated preference
+        finish(); //exit activity
     }
 
 
